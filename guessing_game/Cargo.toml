@@ -1,0 +1,13 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.3"
+
+# Ensuring Reproducible Builds with the Cargo.lock File
+# To handle this, Rust creates the Cargo.lock file the first time you run cargo build.
+# When you do want to update a crate, Cargo provides the command update, which will ignore the Cargo.lock file and figure out all the latest versions that fit your specifications in Cargo.toml.
